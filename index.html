@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mateus Vieira — Full-Stack Jr.</title>
+  <meta name="description" content="Portfólio de Mateus Henrique Oliveira Vieira — Full-Stack Jr. apaixonado por Python, React e PostgreSQL." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles/styles.css" />
+
+</head>
+
+<body>
+
+  <div class="ambient-orb ambient-orb--1" aria-hidden="true"></div>
+  <div class="ambient-orb ambient-orb--2" aria-hidden="true"></div>
+  <div class="ambient-orb ambient-orb--3" aria-hidden="true"></div>
+
+  <div class="wrapper">
+
+    <!-- NAVBAR -->
+    <nav class="nav" id="nav" role="navigation" aria-label="Navegação principal">
+      <div class="container">
+        <div class="nav__inner">
+          <a href="#inicio" class="nav__logo" aria-label="Início">{<span>mv</span>}</a>
+          <ul class="nav__links" id="nav-links" role="list">
+            <li><a href="#sobre"     class="nav__link">sobre</a></li>
+            <li><a href="#projetos"  class="nav__link">projetos</a></li>
+            <li><a href="#curriculo" class="nav__link">currículo</a></li>
+            <li><a href="#contato"   class="nav__cta">contato</a></li>
+          </ul>
+          <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="inicio" aria-label="Apresentação">
+      <p class="hero__eyebrow">full-stack jr. · disponível para projetos</p>
+
+      <h1 class="hero__title reveal">
+        Olá, eu sou<br>
+        <strong id="typewriter-name"></strong><span class="typewriter-cursor" aria-hidden="true"></span>
+      </h1>
+
+      <p class="hero__subtitle reveal reveal--delay-1">
+        Formado em ADS e em formação em EGS — trago criatividade e personalidade pra tudo que construo, do back ao front.
+      </p>
+
+      <div class="hero__actions reveal reveal--delay-2">
+        <a href="#projetos" class="btn btn--primary">ver projetos</a>
+        <a href="#sobre"    class="btn btn--ghost">sobre mim</a>
+      </div>
+
+      <div class="hero__scroll reveal reveal--delay-3" aria-hidden="true">
+        <div class="hero__scroll-line"></div>
+        <span>scroll</span>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- SOBRE -->
+    <section class="section sobre" id="sobre" aria-label="Sobre mim">
+      <div class="container">
+        <div class="sobre__grid">
+
+          <!-- Avatar geométrico -->
+          <div class="avatar-wrap reveal">
+            <div class="avatar" role="img" aria-label="Avatar de Mateus Vieira">
+              <div class="avatar__ring"  aria-hidden="true"></div>
+              <div class="avatar__ring avatar__ring--2" aria-hidden="true"></div>
+              <div class="avatar__face">
+                <img src="https://github.com/Matt0820.png" alt="Foto de perfil de Mateus Vieira" class="avatar__photo"/>
+              </div>
+              <div class="avatar__dot avatar__dot--1" aria-hidden="true"></div>
+              <div class="avatar__dot avatar__dot--2" aria-hidden="true"></div>
+            </div>
+          </div>
+
+          <!-- Conteúdo -->
+          <div class="sobre__content">
+            <span class="sobre__tag reveal">sobre mim</span>
+
+            <h2 class="sobre__title reveal reveal--delay-1">
+              Mateus Henrique<br>Oliveira Vieira
+            </h2>
+
+            <p class="sobre__bio reveal reveal--delay-2">
+              Formado no <strong>Técnico em Análise e Desenvolvimento de Sistemas</strong> e atualmente em formação em <strong>Engenharia de Software</strong>, busco implementar minha criatividade e personalidade em cada projeto — porque código sem identidade é só texto.
+            </p>
+
+            <!-- Formação -->
+            <div class="sobre__edu reveal reveal--delay-3">
+              <div class="edu-item">
+                <div class="edu-item__icon" aria-hidden="true">🎓</div>
+                <div class="edu-item__info">
+                  <p class="edu-item__title">Técnico em ADS</p>
+                  <p class="edu-item__sub">concluído</p>
+                </div>
+              </div>
+              <div class="edu-item">
+                <div class="edu-item__icon" aria-hidden="true">📐</div>
+                <div class="edu-item__info">
+                  <p class="edu-item__title">Engenharia de Software</p>
+                  <p class="edu-item__sub">em formação</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Stack -->
+            <div class="reveal reveal--delay-4">
+              <p class="stack__label">stack principal</p>
+              <div class="stack__chips" role="list" aria-label="Tecnologias">
+                <span class="chip chip--highlight" role="listitem">
+                  <span class="chip__dot" style="background:#3776ab" aria-hidden="true"></span>
+                  Python
+                </span>
+                <span class="chip chip--highlight" role="listitem">
+                  <span class="chip__dot" style="background:#61dafb" aria-hidden="true"></span>
+                  React
+                </span>
+                <span class="chip chip--highlight" role="listitem">
+                  <span class="chip__dot" style="background:#336791" aria-hidden="true"></span>
+                  PostgreSQL
+                </span>
+                <span class="chip" role="listitem">
+                  <span class="chip__dot" style="background:#f7df1e" aria-hidden="true"></span>
+                  JavaScript
+                </span>
+                <span class="chip" role="listitem">
+                  <span class="chip__dot" style="background:#e34f26" aria-hidden="true"></span>
+                  HTML/CSS
+                </span>
+                <span class="chip" role="listitem">
+                  <span class="chip__dot" style="background:#ffffff" aria-hidden="true"></span>
+                  Git
+                </span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- PROJETOS -->
+    <section class="section" id="projetos" aria-label="Projetos">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-header__tag">fase 3</span>
+          <h2 class="section-header__title">Projetos do GitHub</h2>
+          <p class="section-header__desc">Uma seleção dos meus repositórios públicos mais recentes, carregados diretamente da minha conta GitHub.</p>
+        </div>
+
+        <div class="projects-grid reveal" id="projects-grid" aria-live="polite">
+          <div class="project-card project-card--placeholder">
+            <p class="project-card__title">Carregando projetos...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- CURRÍCULO -->
+    <section class="section" id="curriculo" aria-label="Currículo">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-header__tag">fase 4</span>
+          <h2 class="section-header__title">Currículo e experiências</h2>
+          <p class="section-header__desc">Deixei um espaço reservado para o PDF do currículo e uma nota sobre minha busca por uma primeira oportunidade em tecnologia.</p>
+        </div>
+        <div class="curriculo-grid reveal">
+          <article class="resume-card">
+            <div>
+              <p class="resume-card__label">Currículo</p>
+              <p class="resume-card__desc">Clique abaixo para abrir ou baixar meu currículo em PDF.</p>
+            </div>
+            <div class="resume-card__footer">
+              <a class="btn btn--ghost" href="./assets/Mateus H. Oliveira.pdf" target="_blank" rel="noopener" download>
+                Ver currículo em PDF
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- CONTATO (placeholder Fase 5) -->
+    <section class="section" id="contato" aria-label="Contato">
+      <div class="container">
+        <div class="placeholder-section reveal">
+          <p class="placeholder-section__label">fase 5</p>
+          <p class="placeholder-section__title">Redes e contato em breve</p>
+          <div class="placeholder-section__box">
+            <a href="https://github.com/Matt0820" target="_blank" rel="noopener" style="color:var(--accent-light);font-family:var(--font-mono);font-size:var(--text-sm)">github.com/Matt0820</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="divider"></div>
+      <div class="container" style="padding-top:2rem">
+        <div class="footer__inner">
+          <p class="footer__copy">
+            feito com <span>♥</span> por Mateus Vieira — 2025
+          </p>
+          <nav class="footer__links" aria-label="Links do rodapé">
+            <a href="#sobre"    class="footer__link">sobre</a>
+            <a href="#projetos" class="footer__link">projetos</a>
+            <a href="https://github.com/Matt0820" class="footer__link" target="_blank" rel="noopener">github</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="scripts/scripts.js"></script>
+
+</body>
+</html>
