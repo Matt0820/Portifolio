@@ -1,80 +1,90 @@
 # Portifolium
 
-A polished personal portfolio website for Mateus Vieira, built with plain HTML, CSS, and JavaScript. This project is designed to present a stronger, more professional showcase than a standard academic repository like `Locar` by focusing on modern UI, smooth animations, responsive design, and dynamic GitHub integration.
+## Sobre o Projeto
 
-## Overview
+O Portifolium é meu portfólio pessoal e representa muito mais do que apenas um website. Este projeto reúne os conhecimentos adquiridos durante minha formação em Análise e Desenvolvimento de Sistemas (ADS) e no curso de Engenharia de Software, consolidando conceitos fundamentais do desenvolvimento web em um único lugar.
 
-`Portifolium` is a static portfolio landing page that highlights:
+Desenvolvido utilizando HTML, CSS e JavaScript Vanilla, este projeto nasceu com um objetivo simples: criar meu primeiro portfólio e realizar meu primeiro deploy. Ao longo do desenvolvimento, procurei aplicar boas práticas de estruturação, organização e estilização, valorizando os fundamentos que sustentam praticamente toda aplicação web moderna.
 
-- a modern hero section with a custom typewriter animation
-- an about section with education, core skills, and personal branding
-- a GitHub projects section that loads repositories dynamically from the public API
-- a downloadable resume PDF for recruiters and hiring managers
-- a responsive navigation menu and mobile-first layout
-- accessible markup, semantic sections, and polished visuals
+Mais do que um repositório de projetos, este site representa minha evolução como estudante e desenvolvedor, reunindo experiências, aprendizados e conhecimentos construídos ao longo da minha jornada.
 
-## Why this repo is stronger than an academic project
+---
 
-This portfolio was built to showcase real-world frontend craftsmanship rather than just an academic assignment. Key improvements include:
+## Tecnologias Utilizadas
 
-- clean visual design with glassmorphism-inspired surfaces and animated background orbs
-- subtle scroll reveal effects and accessible transitions
-- production-ready interactions like a mobile menu and GitHub API-powered project cards
-- emphasis on personal brand, career goals, and developer narrative
-- straightforward structure with no build tools required
+* HTML5
+* CSS3
+* JavaScript (Vanilla)
+* Git
+* GitHub
 
-## Features
+---
 
-- Dynamic GitHub project loading from `https://api.github.com/users/Matt0820/repos`
-- Typewriter effect for the hero name animation
-- Responsive desktop and mobile navigation
-- Smooth scroll behavior and section anchors
-- Resume download button linked from `assets/Mateus H. Oliveira.pdf`
-- Accessible semantics using `aria-*` attributes and clean HTML structure
+## Funcionalidades
 
-## Built with
+* Apresentação pessoal
+* Exibição de projetos
+* Exibição de habilidades e tecnologias
+* Informações de contato
+* Download de currículo
+* Layout responsivo para diferentes dispositivos
 
-- HTML
-- CSS
-- JavaScript
-- GitHub API
+---
 
-## Project structure
+## Filosofia de Desenvolvimento
 
-- `index.html` — main portfolio page and site structure
-- `styles/styles.css` — theme, layout, responsive design, and animations
-- `scripts/scripts.js` — page interactions, menu behavior, typewriter effect, and GitHub repository loading
-- `assets/` — supporting assets, such as the resume PDF and any future media
+Acredito que um bom software deve ser compreensível antes de ser complexo.
 
-## How to run locally
+Durante o desenvolvimento deste projeto, priorizei a legibilidade e a organização do código, buscando criar uma estrutura que pudesse ser facilmente entendida, mantida e expandida futuramente.
 
-1. Clone the repository.
-2. Open `index.html` directly in the browser or run a static server.
-3. If you want the GitHub cards to load correctly, make sure you have internet access.
+Tecnologias e ferramentas evoluem constantemente, mas os fundamentos permanecem. Por esse motivo, optei por desenvolver este projeto utilizando HTML, CSS e JavaScript puros, reforçando conhecimentos essenciais antes da adoção de abstrações mais avançadas.
 
-### Recommended local workflow
+---
 
-- Use VS Code Live Server
-- Or run a simple Python server:
-  ```bash
-  python3 -m http.server 8000
-  ```
-- Navigate to `http://localhost:8000`
+## Aprendizados
 
-## Notes
+Este projeto me permitiu praticar e consolidar conceitos importantes, como:
 
-- This is a fully static site with zero build configuration.
-- The GitHub section pulls the latest public repos from the account `Matt0820`.
-- The resume PDF is available under `assets/` and can be downloaded with the button on the page.
-- Some sections are built as placeholders for easy future expansion.
+* Estruturação semântica com HTML
+* Estilização responsiva com CSS
+* Manipulação de elementos com JavaScript
+* Organização de projetos front-end
+* Controle de versão com Git
+* Publicação e deploy de aplicações web
 
-## Future improvements
+Além dos aspectos técnicos, este projeto também marcou uma etapa importante da minha trajetória: a experiência de planejar, desenvolver e publicar uma aplicação própria do início ao fim.
 
-- add a contact form or email link
-- include project details and portfolio case studies
-- add more personal branding copy and testimonials
-- support dark/light theme switching
+---
 
-## License
+## Próximas Atualizações
 
-No license specified.
+Algumas melhorias planejadas para futuras versões incluem:
+
+* Remoção completa de conteúdos temporários gerados durante o desenvolvimento
+* Implementação de múltiplos temas visuais
+* Exibição do currículo diretamente no site
+* Separação de conteúdos em páginas dedicadas
+* Melhorias de acessibilidade
+* Integração com a API do GitHub para exibição dinâmica de projetos e repositórios
+
+---
+
+## Como Executar Localmente
+
+```bash
+git clone https://github.com/Matt0820/Portifolium.git
+
+cd Portifolium
+```
+
+Após isso, basta abrir o arquivo `index.html` em seu navegador.
+
+---
+
+## Autor
+
+**Mateus Henrique Oliveira**
+
+Estudante de tecnologia, apaixonado por programação, aprendizado contínuo e desenvolvimento de software.
+
+Este projeto representa o início da minha jornada pública como desenvolvedor e continuará evoluindo à medida que novos conhecimentos e experiências forem sendo adquiridos.
