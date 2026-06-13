@@ -2,7 +2,7 @@
 
 ## Sobre o Projeto
 
-O Portifolium é meu portfólio pessoal e representa muito mais do que apenas um website. Este projeto reúne os conhecimentos adquiridos durante minha formação em Análise e Desenvolvimento de Sistemas (ADS) e no curso de Engenharia de Software, consolidando conceitos fundamentais do desenvolvimento web em um único lugar.
+É meu portfólio pessoal e representa muito mais do que apenas um website. Este projeto reúne os conhecimentos adquiridos durante minha formação em Análise e Desenvolvimento de Sistemas (ADS) e no curso de Engenharia de Software, consolidando conceitos fundamentais do desenvolvimento web em um único lugar.
 
 Desenvolvido utilizando HTML, CSS e JavaScript Vanilla, este projeto nasceu com um objetivo simples: criar meu primeiro portfólio e realizar meu primeiro deploy. Ao longo do desenvolvimento, procurei aplicar boas práticas de estruturação, organização e estilização, valorizando os fundamentos que sustentam praticamente toda aplicação web moderna.
 
