@@ -668,12 +668,335 @@
       letter-spacing: 0.08em;
     }
 
+    /* =============================================
+       CURRÍCULO - SEÇÕES
+       ============================================= */
+    .resume-section {
+      margin-bottom: var(--space-16);
+      padding: var(--space-8);
+      border-radius: var(--radius-lg);
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      backdrop-filter: none;
+    }
+
+    .resume-section__header {
+      display: flex;
+      align-items: center;
+      gap: var(--space-4);
+      margin-bottom: var(--space-8);
+    }
+
+    .resume-section__icon {
+      width: 48px;
+      height: 48px;
+      border-radius: var(--radius-lg);
+      background: var(--accent-subtle);
+      border: 1px solid var(--glass-border-accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      flex-shrink: 0;
+    }
+
+    .resume-section__title {
+      font-family: var(--font-display);
+      font-size: var(--text-xl);
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: var(--space-2);
+    }
+
+    .resume-section__subtitle {
+      font-size: var(--text-sm);
+      color: var(--text-muted);
+    }
+
+    /* =============================================
+       TIMELINE
+       ============================================= */
+    .timeline {
+      position: relative;
+      padding-left: var(--space-6);
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 7px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(180deg, var(--accent), transparent);
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: var(--space-6);
+    }
+
+    .timeline-item__dot {
+      position: absolute;
+      left: -21px;
+      top: 6px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: var(--accent);
+      border: 3px solid var(--bg-deep);
+      box-shadow: 0 0 12px var(--accent-glow);
+    }
+
+    .timeline-item__content {
+      padding: var(--space-4);
+      margin: 0;
+      border-radius: var(--radius-md);
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      transition: all var(--dur-base) var(--ease-smooth);
+    }
+
+    .timeline-item__content:hover {
+      background: rgba(139, 92, 246, 0.05);
+      border-color: var(--aqua);
+    }
+
+    .timeline-item__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: var(--space-4);
+      margin-bottom: var(--space-3);
+    }
+
+    .timeline-item__title {
+      font-size: var(--text-base);
+      font-weight: 600;
+      color: var(--text-primary);
+      margin: 0;
+    }
+
+    .timeline-item__date {
+      font-family: var(--font-mono);
+      font-size: var(--text-xs);
+      color: var(--accent-light);
+      white-space: nowrap;
+    }
+
+    .timeline-item__description {
+      font-size: var(--text-sm);
+      color: var(--text-secondary);
+      margin-bottom: var(--space-3);
+      line-height: 1.7;
+    }
+
+    .timeline-item__skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-2);
+    }
+
+    /* =============================================
+       SKILL TAGS
+       ============================================= */
+    .skill-tag {
+      display: inline-block;
+      padding: var(--space-1) var(--space-3);
+      border-radius: var(--radius-pill);
+      background: rgba(34, 211, 238, 0.08);
+      border: 1px solid rgba(34, 211, 238, 0.25);
+      font-size: var(--text-xs);
+      color: var(--aqua);
+      font-weight: 400;
+      transition: all var(--dur-fast) var(--ease-smooth);
+    }
+
+    .skill-tag:hover {
+      background: rgba(34, 211, 238, 0.12);
+      border-color: var(--aqua);
+    }
+
+    /* =============================================
+       SKILLS GRID
+       ============================================= */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-8);
+    }
+
+    .skills-category {
+      padding: var(--space-6);
+      margin-bottom: var(--space-3);
+      border-radius: var(--radius-md);
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      transition: all var(--dur-base) var(--ease-smooth);
+    }
+
+    .skills-category:hover {
+      background: rgba(139, 92, 246, 0.05);
+      border-color: var(--aqua);
+    }
+
+    .skills-category__title {
+      font-family: var(--font-display);
+      font-size: var(--text-base);
+      font-weight: 600;
+      color: var(--accent-light);
+      margin-bottom: var(--space-4);
+      display: block;
+    }
+
+    .skills-list {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+    }
+
+    .skill-item {
+      font-size: var(--text-sm);
+      color: var(--text-secondary);
+      padding-left: var(--space-4);
+      position: relative;
+      transition: color var(--dur-base) var(--ease-smooth);
+      overflow: hidden;
+    }
+
+    .skill-item::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--aqua);
+      opacity: 0.5;
+      transform: translateY(-50%);
+      transition: all var(--dur-base) var(--ease-smooth);
+      box-shadow: none;
+    }
+
+    .skill-item:hover {
+      color: var(--text-primary);
+    }
+
+    .skill-item:hover::before {
+      opacity: 1;
+      width: 8px;
+      height: 8px;
+      left: -1px;
+      box-shadow: 0 0 8px rgba(34, 211, 238, 0.6);
+    }
+
+    /* =============================================
+       EDUCATION
+       ============================================= */
+    .education-list {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-6);
+    }
+
+    .education-item {
+      position: relative;
+      padding-left: var(--space-8);
+      padding: var(--space-5);
+      padding-left: var(--space-8);
+      margin-bottom: var(--space-3);
+      border-radius: var(--radius-md);
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      transition: all var(--dur-base) var(--ease-smooth);
+    }
+
+    .education-item:hover {
+      background: rgba(139, 92, 246, 0.05);
+      border-color: var(--aqua);
+    }
+
+    .education-item__marker {
+      position: absolute;
+      left: var(--space-4);
+      top: var(--space-6);
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--aqua);
+      border: 3px solid var(--bg-deep);
+      box-shadow: 0 0 8px rgba(34, 211, 238, 0.4);
+    }
+
+    .education-item__title {
+      font-family: var(--font-display);
+      font-size: var(--text-base);
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: var(--space-1);
+    }
+
+    .education-item__institution {
+      font-family: var(--font-mono);
+      font-size: var(--text-xs);
+      color: var(--accent-light);
+      margin-bottom: var(--space-3);
+      display: block;
+    }
+
+    .education-item__description {
+      font-size: var(--text-sm);
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    /* =============================================
+       RESUME DOWNLOAD
+       ============================================= */
+    .resume-download {
+      padding: var(--space-8);
+      border-radius: var(--radius-lg);
+      background: rgba(139, 92, 246, 0.05);
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      backdrop-filter: none;
+    }
+
+    .resume-download__content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-6);
+    }
+
+    .resume-download__title {
+      font-family: var(--font-display);
+      font-size: var(--text-lg);
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: var(--space-2);
+    }
+
+    .resume-download__desc {
+      font-size: var(--text-sm);
+      color: var(--text-secondary);
+      max-width: 400px;
+    }
+
+    /* =============================================
+       RESPONSIVE
+       ============================================= */
     @media (max-width: 960px) {
       .projects-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .curriculo-grid { grid-template-columns: 1fr; }
+      .skills-grid { grid-template-columns: 1fr; }
+      .resume-download__content { flex-direction: column; align-items: flex-start; }
     }
     @media (max-width: 640px) {
       .projects-grid { grid-template-columns: 1fr; }
+      .skills-grid { grid-template-columns: 1fr; }
+      .resume-section { padding: var(--space-5); }
+      .resume-download__content { flex-direction: column; align-items: stretch; gap: var(--space-4); }
     }
 
     /* =============================================
